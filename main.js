@@ -23,6 +23,7 @@ const svg2_RENAME = d3.select("#lineChart2")
 
 // 2.a: LOAD...
 d3.csv("weather.csv").then(data => {
+    console.log(data);
     // 2.b: ... AND TRANSFORM DATA
 
     // 3.a: SET SCALES FOR CHART 1
