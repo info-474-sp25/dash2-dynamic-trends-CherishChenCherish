@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard 2</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script> <!-- Load D3 library -->
-    <link rel="stylesheet" href="style.css"> <!-- Connect to style.css for styles -->
+    <title>Weather Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="vertical-container">
     <!-- HEADER -->
     <div class="item">
-        <h1>Visualizations Dashboard of 2014 & 2015 U.S Weather</h1>
+        <h1>Weather Visualization Dashboard (2014-2015)</h1>
         <p><strong>Author(s):</strong> Cherish Chen & Zhiming Huang</p>
         <p><strong>Documentation:</strong> <a href="https://docs.google.com/document/d/1WNOQhTrUam_UYyJ7m0w5PUrlaiNkOMso3sNxP9S09GA/edit?tab=t.zgema3ymmyx4" target="_blank">Link</a></p>
     </div>
     
     <!-- INTERACTIVE WIDGETS -->
     <div class="item horizontal-container">
-        <div class="item"><!-- Your widget 1 code goes here. -->
-            <!-- Widget 1 title -->
-            <!-- Widget 1 element -->
-        </div>
-
-        <!-- DELETE THE FOLLOWING DIV IF YOU ONLY HAVE 1 WIDGET. -->
-        <div class="item"><!-- Your widget 2 code goes here. -->
-            <!-- Widget 2 title -->
-            <!-- Widget 2 element -->
+        <div class="item">
+            <label for="citySelect"><strong>Select City:</strong></label>
+            <select id="citySelect">
+                <option value="">Choose a city...</option>
+            </select>
         </div>
     </div>
 
-    <!-- CHART(S) -->
+    <!-- CHARTS -->
     <div class="item chart-container">
-        <h2>[Chart 1 Title]</h2>
-        <svg id="lineChart1" width="900" height="400"></svg> <!-- If you change this ID name, you must change it in main.js too -->
+        <h2>Monthly Cumulative Rainfall</h2>
+        <svg id="lineChart1" width="1100" height="500"></svg>
     </div>
-    <!-- DELETE THE FOLLOWING DIV IF YOU ONLY HAVE 1 CHART. -->
+    
     <div class="item chart-container">
-        <h2>[Chart 2 Title]</h2>
-        <svg id="lineChart2" width="900" height="400"></svg>
+        <h2>Daily Temperature Trends</h2>
+        <svg id="lineChart2" width="1100" height="500"></svg>
     </div>
+    
     <script src="main.js"></script>
 </body>
 </html>
-
-<!-- Starter code polished with assistance from DeepSeek. -->
